@@ -144,3 +144,4 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => whatsappBtn.style.opacity = "1", 300);
   }
 });
+
