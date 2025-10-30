@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | Faycom</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">
+      <a href="../index.html">
+        <img src="../imagenes/Logo Faycom.png" alt="Faycom" />
+      </a>
+    </h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="checkout">
+    <h2>Resumen de tu compra</h2>
+    <div class="checkout-detalle">
+      <img id="productoImagen" src="../imagenes/marcador120.jpg" alt="Producto seleccionado">
+      <div class="checkout-info">
+        <h3 id="productoNombre">Marcadores Dual Brush</h3>
+        <p id="productoPrecio">$19.990</p>
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" value="1" min="1" />
+        <p class="subtotal">Subtotal: <span id="subtotal">$19.990</span></p>
+        <button class="btn" id="btnFinalizar">Finalizar compra</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Faycom</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/faycom" target="_blank" aria-label="Facebook">
+        <img src="../imagenes/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/faycom" target="_blank" aria-label="Instagram">
+        <img src="../imagenes/instagram.svg" alt="Instagram">
+      </a>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
