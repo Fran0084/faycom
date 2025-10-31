@@ -22,30 +22,64 @@
     </nav>
   </header>
 
-  <section class="productos">
-    <h2>Nuestros productos</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="../imagenes/marcador120.jpg" alt="Marcadores Dual Brush 120" />
-        <h4>Marcadores Dual Brush</h4>
-        <p>Set de 120 colores con doble punta. Ideal para lettering y arte.</p>
-        <a href="./producto-marcadores120.html" class="btn">Ver más</a>
-      </div>
+  <!-- === FILTROS DE PRODUCTOS === -->
+<section class="filtros-productos">
+  <button class="filtro-btn active" data-categoria="todos">Todos</button>
+  <button class="filtro-btn" data-categoria="marcadores">Marcadores</button>
+  <button class="filtro-btn" data-categoria="pizarras">Pizarras</button>
+  <button class="filtro-btn" data-categoria="proyectores">Proyectores</button>
+  <button class="filtro-btn" data-categoria="otros">Otros</button>
+</section>
 
+
+  <section class="destacados">
+    <h3>Destacados</h3>
+    <div class="grid">
+      
+      <div class="card">
+        <img src="../imagenes/marcador120.jpg" alt="Marcadores Dual Brush" />
+        <h4>Marcadores Dual Brush 120</h4>
+        <a href="../paginas/producto-marcadores120.html" class="btn">Ver más</a>
+      </div>
+      
       <div class="card">
         <img src="../imagenes/astronauta.png" alt="Astronauta Proyector" />
         <h4>Astronauta Proyector</h4>
-        <p>Proyecta luces de galaxia con control remoto y múltiples modos.</p>
-        <a href="producto-astronauta.html" class="btn">Ver más</a>
+        <a href="../paginas/producto-astronauta.html" class="btn">Ver más</a>
+      </div>
+      
+      <div class="card">
+        <img src="../imagenes/pizarrab.png" alt="Pizarra LED" />
+        <h4>Pizarra LED</h4>
+        <a href="../paginas/producto-pizarra.html" class="btn">Ver más</a>
       </div>
 
       <div class="card">
-        <img src="../imagenes/pizarra (2).jpg" alt="Pizarra LED" />
-        <h4>Pizarra LED</h4>
-        <p>Diseñá mensajes luminosos y decorativos con estilo moderno.</p>
-        <a href="producto-pizarra.html" class="btn">Ver más</a>
+        <img src="../imagenes/marcador100.jpg" alt="Marcadores100" />
+        <h4>Marcadores Dual Brush 100</h4>
+        <a href="../paginas/producto-marcadores100.html" class="btn">Ver más</a>
       </div>
+
+      <div class="card">
+        <img src="../imagenes/Faycom y ML.jpg" alt="marcadormetalizado" />
+        <h4>Fibrones Metalizados</h4>
+        <a href="../paginas/marcadoresMetalizados.html" class="btn">Ver más</a>
+      </div>
+
+      <div class="card">
+        <img src="../imagenes/x36.jpg" alt="marcador36" />
+        <h4>Set marcadores acrilicos 36</h4>
+        <a href="../paginas/producto-marcadores36.html" class="btn">Ver más</a>
+      </div>
+
+       <div class="card">
+        <img src="../imagenes/x48.jpg" alt="marcador48" />
+        <h4>Set marcadores acrilicos 48</h4>
+        <a href="../paginas/producto-marcadores48.html" class="btn">Ver más</a>
+      </div>
+  
     </div>
+    <p><strong>(Para consultar precios mayorista envianos tu consulta por medio del formulario de contacto)</strong></p>
   </section>
 
   <footer>
@@ -60,6 +94,14 @@
   </div>
     <p>© 2025 Faycom</p>
   </footer>
+
+  <!-- === BOTÓN WHATSAPP === -->
+  <a href="https://wa.me/5491150453040" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    id="whatsappBtn">
+    <img src="../imagenes/whatsapp (1).png" alt="WhatsApp">
+  </a>
+
+  <script src="./script.js"></script>
     <script src="../script.js"></script>
 
 </body>

@@ -22,7 +22,7 @@
 <body>
   <header class="navbar">
     <h1 class="logo">
-      <img src="../imagenes/Logo Faycom.png" alt="Faycom" />
+      <a href="../index.html"><img src="../imagenes/Logo Faycom.png" alt="Faycom"></a>
     </h1>
     <nav>
       <ul class="menu">
@@ -47,6 +47,35 @@
 
   </section>
 
+  <section class="mapa-container">
+  <h2>Encontranos</h2>
+  <div id="map"></div>
+</section>
+
+<section class="info-contacto-extra">
+  <div class="info-bloque">
+    <h3>📍 Nuestra Ubicación</h3>
+    <p>Av. Rivadavia y J. Milton, CABA, Buenos Aires, Argentina</p>
+  </div>
+
+  <div class="info-bloque">
+    <h3>🕒 Horarios de Atención</h3>
+    <p>Lunes a Viernes: 9:00 a 18:00 hs<br>
+    Sábados: 9:00 a 13:00 hs</p>
+  </div>
+
+  <div class="info-bloque">
+    <h3>📞 Medios de Contacto</h3>
+    <p>Teléfono: +54 11 5045-3040<br>
+    WhatsApp: <a href="https://wa.me/5491150453040" target="_blank">+54 9 11 5045-3040</a><br>
+    Email: <a href="mailto:faycomof@gmail.com">faycomof@gmail.com</a></p>
+  </div>
+
+  <div class="info-bloque frase-final">
+    <p>✨ En <b>FAYCOM</b> potenciamos tu creatividad con los mejores materiales ✨</p>
+  </div>
+</section>
+
  <footer>
     
   <div class="social-icons">
@@ -59,7 +88,27 @@
   </div>
     <p>© 2025 Faycom</p>
   </footer>
+
+  <!-- === BOTÓN WHATSAPP === -->
+  <a href="https://wa.me/5491150453040" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    id="whatsappBtn">
+    <img src="../imagenes/whatsapp (1).png" alt="WhatsApp">
+  </a>
+
+  <script src="./script.js"></script>
   <script src="../script.js"></script>
+  
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+<!-- Tu archivo JS con la configuración del mapa -->
+<script src="../mapa.js"></script>
 </body>
 </html>
 

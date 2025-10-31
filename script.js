@@ -145,3 +145,28 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
+
+// === FILTRO DE PRODUCTOS ===
+document.addEventListener("DOMContentLoaded", () => {
+  const botonesFiltro = document.querySelectorAll(".filtro-btn");
+  const tarjetas = document.querySelectorAll(".card");
+
+  botonesFiltro.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // Quitar "active" de todos los botones
+      botonesFiltro.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const categoria = btn.getAttribute("data-categoria");
+
+      tarjetas.forEach((card) => {
+        if (categoria === "todos" || card.dataset.categoria === categoria) {
+          card.style.display = "flex";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  });
+});
