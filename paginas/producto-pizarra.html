@@ -23,6 +23,11 @@
     </nav>
   </header>
 
+  <div class="producto-info">
+      <h2 id="nombre-producto">Pizarra Led</h2>
+      <p>Incluye 7 marcadores - Paño - Conector USB</p>
+     </div>
+
  <section class="producto-detalle">
     <div class="producto-imagenes">
       <div class="carousel">
@@ -42,11 +47,22 @@
         
     </div>
   
-    <div class="producto-info">
-      <h2>Astronauta Proyector de galaxias</h2>
-      <p>Incluye cable de alimentacion - Control remoto</p>
-      <p class="precio">$20.000</p>
-<button class="btn btn-comprar">Comprar ahora</button>
+ <section class="carrito-producto">
+  <h3>Agregar al carrito</h3>
+  <div class="control-cantidad">
+    <button class="btn-cantidad" id="restar">−</button>
+    <span id="cantidad">1</span>
+    <button class="btn-cantidad" id="sumar">+</button>
+  </div>
+
+  <p class="precio-carrito">Precio: $<span id="precio-unitario"> 25500</span></p>
+  <p class="subtotal">Subtotal: $<span id="subtotal"> 0</span></p>
+
+  <div class="acciones-carrito">
+    <button id="continuar" class="btn continuar">🛒 Continuar comprando</button>
+    <button id="finalizar" class="btn finalizar">✅ Finalizar compra</button>
+  </div>
+</section>
 
  <footer>
     
@@ -60,6 +76,16 @@
   </div>
     <p>© 2025 Faycom</p>
   </footer>
+
+   <!-- === BOTÓN WHATSAPP === -->
+  <a href="https://wa.me/5491150453040" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    id="whatsappBtn">
+    <img src="../imagenes/whatsapp (1).png" alt="WhatsApp">
+  </a>
+  <!-- 🛒 Botón flotante del carrito -->
+<a href="../paginas/checkout.html" id="btnCarritoFlotante" class="btn-carrito-flotante" aria-label="Ver carrito">
+  🛒
+</a>
       <script src="../script.js"></script>
 
 </body>

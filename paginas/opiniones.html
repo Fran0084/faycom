@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Checkout | Faycom</title>
-  <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opiniones de Clientes | Faycom</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script defer src="../script.js"></script>
 </head>
 <body>
- <header class="navbar">
+
+  <!-- 🔹 NAV igual que el resto de tu web -->
+<header class="navbar">
     <h1 class="logo">
       <a href="../index.html"><img src="../imagenes/Logo Faycom.png" alt="Faycom"></a>
     </h1>
@@ -20,14 +24,31 @@
     </nav>
   </header>
 
-  <section class="checkout">
-    <h2>Resumen de tu compra</h2>
-    <ul id="lista-carrito"></ul>
-    <p class="total">Total: $<span id="total"></span></p>
-    <button class="btn pagar">Ir al pago</button>
-  </section>
-  <div id="carrito-contenido"></div>
+  <!-- 🔹 Contenido principal -->
+  <main class="contenedor">
+    <h1 class="titulo">Dejanos tu opinión</h1>
+    <p class="descripcion">Contanos tu experiencia con nuestros productos o servicios. ¡Tu opinión nos ayuda a mejorar!</p>
 
+    <section class="comentario-form">
+      <form id="formComentario" class="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" rows="4" required></textarea>
+
+        <label for="imagen">Subí una imagen (opcional):</label>
+        <input type="file" id="imagen" accept="image/*">
+
+        <button type="submit" class="btn">Enviar comentario</button>
+      </form>
+    </section>
+
+    <section class="comentarios-lista">
+      <h2>Opiniones recientes</h2>
+      <div id="listaComentarios" class="lista-comentarios"></div>
+    </section>
+  </main>
 
    <footer>
     
@@ -51,7 +72,7 @@
 <a href="../paginas/checkout.html" id="btnCarritoFlotante" class="btn-carrito-flotante" aria-label="Ver carrito">
   🛒
 </a>
-      <script src="../script.js"></script>
+  <script src="../script.js"></script>
 
 </body>
 </html>
