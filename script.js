@@ -291,3 +291,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+
+// === POPUP NUEVO PRODUCTO ===
+window.addEventListener("load", () => {
+  const popup = document.getElementById("popupNuevoProducto");
+  const btnCerrar = document.getElementById("cerrarPopup");
+
+  if (popup) {
+    // Mostrar popup 0.8 segundos después
+    setTimeout(() => {
+      popup.style.display = "block";
+    }, 800);
+
+    // Cerrar popup al hacer clic en la X
+    btnCerrar.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  }
+});

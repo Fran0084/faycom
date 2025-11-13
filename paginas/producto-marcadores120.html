@@ -27,29 +27,42 @@
       <p>Incluye valija transportadora</p>
      </div>
 
-  <section class="producto-detalle">
-  <div class="producto-media">
-    <!-- Carrusel centrado -->
-    <div class="carousel">
-      <button class="prev">&#10094;</button>
-      <div class="carousel-track">
-        <img src="../imagenes/marcador120.jpg" alt="Marcadores Dual Brush">
-        <img src="../imagenes/120.jpeg" alt="Marcadores Dual Brush">
-        <img src="../imagenes/120a.jpeg" alt="Marcadores Dual Brush">
-        <img src="../imagenes/120b.jpeg" alt="Marcadores Dual Brush">
+ <section class="producto-detalle">
+  <div class="contenedor-producto">
+    <!-- Columna izquierda: carrusel (tu estructura existente) -->
+    <div class="producto-imagenes">
+      <div class="carousel">
+        <button class="prev">&#10094;</button>
+        <div class="carousel-track">
+          <img src="../imagenes/marcador120.jpg" alt="Marcadores Dual Brush">
+        <img src="../imagenes/120.jpeg" alt="Marcadores Dual Brush">
+        <img src="../imagenes/120a.jpeg" alt="Marcadores Dual Brush">
+        <img src="../imagenes/120b.jpeg" alt="Marcadores Dual Brush">
+
+        </div>
+        <button class="next">&#10095;</button>
       </div>
-      <button class="next">&#10095;</button>
     </div>
 
-    <!-- 🎥 Video embebido al costado derecho -->
+    <!-- Columna derecha: video lateral (pega tu link en src) -->
     <div class="producto-video">
-      <iframe 
-        src="https://drive.google.com/file/d/1yYYNg5Vht2WaKkFcBQb99EiAPM2NPxlQ/preview"
-        allow="autoplay; fullscreen"
-        loading="lazy">
-      </iframe>
+      <div class="video-wrapper">
+        <h4 class="video-title">Mirá el producto en acción</h4>
+       <iframe
+  src="https://drive.google.com/file/d/1Y8JURvIiWZ-gtaqJA2NKruHNQvuzoDyn/preview"
+ 
+  class="video-producto"
+  title="Video del producto"
+  frameborder="0"
+  allow="autoplay; fullscreen"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+      </div>
     </div>
   </div>
+</section>
+
 
   <section class="carrito-producto">
   <h3>Agregar al carrito</h3>

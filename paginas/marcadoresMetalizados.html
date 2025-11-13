@@ -11,11 +11,11 @@
 <body>
   <header class="navbar">
     <h1 class="logo">
-       <a href="../index.html"><img src="../imagenes/Logo Faycom.png" alt="Faycom"></a> 
+     <a href="../index.html"><img src="../imagenes/Logo Faycom.png" alt="Faycom"></a> 
     </h1>
     <nav>
       <ul class="menu">
-        <li><a href="index.html">Inicio</a></li>
+        <li><a href="../index.html">Inicio</a></li>
         <li><a href="productos.html">Productos</a></li>
         <li><a href="quienes-somos.html">Quiénes Somos</a></li>
         <li><a href="contacto.html">Contacto</a></li>
@@ -24,24 +24,43 @@
   </header>
 
  <section class="producto-detalle">
+  <div class="contenedor-producto">
+    <!-- Columna izquierda: carrusel (tu estructura existente) -->
     <div class="producto-imagenes">
       <div class="carousel">
         <button class="prev">&#10094;</button>
         <div class="carousel-track">
-          <img src="../imagenes/metalizado.jpg" alt="metalizado">
-          <img src="../imagenes/metalizadoa.jpg" alt="metalizadoa">
-          <img src="../imagenes/metalizadob.png" alt="metalizadob">
-          <img src="../imagenes/metalizadoc.jpg" alt="metalizadoc">
-          <img src="../imagenes/metalizadod.jpg" alt="metalizadod">
-          <img src="../imagenes/metalizadof.jpg" alt="metalizadof">
-
-          
+         <img src="../imagenes/metalizado.jpg" alt="metalizado">
+ <img src="../imagenes/metalizadoa.jpg" alt="metalizadoa">
+ <img src="../imagenes/metalizadob.png" alt="metalizadob">
+ <img src="../imagenes/metalizadoc.jpg" alt="metalizadoc">
+ <img src="../imagenes/metalizadod.jpg" alt="metalizadod">
+<img src="../imagenes/metalizadof.jpg" alt="metalizadof">
 
         </div>
         <button class="next">&#10095;</button>
       </div>
-        
     </div>
+
+    <!-- Columna derecha: video lateral (pega tu link en src) -->
+    <div class="producto-video">
+      <div class="video-wrapper">
+        <h4 class="video-title">Mirá el producto en acción</h4>
+        <iframe
+  src="https://drive.google.com/file/d/13fCai7ma7nvJA1YuMHZ44cj1r6NIe8H3/preview"
+  class="video-producto"
+  title="Video del producto"
+  frameborder="0"
+  allow="autoplay; fullscreen"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+
+      </div>
+    </div>
+  </div>
+</section>
+
   
     <div class="producto-info">
      
